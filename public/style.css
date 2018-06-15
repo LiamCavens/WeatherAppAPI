@@ -1,3 +1,11 @@
+h1 {
+    text-align: center;
+}
+
+.center-div {
+    text-align: center;
+}
+
 .main-container {
     display: grid;
     grid-auto-columns: 20%;
