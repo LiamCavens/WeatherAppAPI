@@ -1,5 +1,8 @@
 h1 {
+    font-family: 'Rammetto One', cursive;
     text-align: center;
+    color: whitesmoke;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 .center-div {
@@ -8,6 +11,27 @@ h1 {
 
 .main-container {
     display: grid;
-    grid-auto-columns: 20%;
-    grid-auto-rows: 20%;
+    grid-template-columns: 33% 33% 33%;
+    /* grid-template-rows: 25% 25% 25% 25%; */
+}
+
+.city-info {
+    grid-column: 2;
+    text-align: center;
+    font-size: 34px;
+    font-family: 'Righteous', cursive;
+}
+
+#background-img {
+       width: 100%;
+       height: 100%;
+       position: fixed;
+       left: 0px;
+       top: 0px;
+       z-index: -1;
+}
+
+.stretch {
+    width: 100vw;
+    height: 100vh;
 }
