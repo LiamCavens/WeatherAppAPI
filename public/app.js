@@ -49,10 +49,12 @@ const populate = function (data) {
     const cityHeader = document.querySelector('#city-name');
     const cityTemp = document.querySelector('#city-temp');
     const weatherType = document.querySelector('#weather-type');
+    const cloudCov = document.querySelector('#cloud-cov')
 
     cityHeader.textContent = `Weather in ${data.city.name}, ${data.city.country}`;
     cityTemp.innerHTML = `Temperature : ${(data.list[0].main.temp - 273).toFixed()}&#176;C`;
     weatherType.innerHTML = `Description : ${data.list[0].weather[0].description} <img id="weather-icon" src='http://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png' alt="weather_icon">`;
+    cloudCov.textContent = `Cloud Coverage: ${data.list[0].clouds.all}%`
 
     const forecast1 = document.querySelector('#cast-1');
     forecast1.innerHTML = `${data.list[1].dt_txt} <img id="weather-icon" src='http://openweathermap.org/img/w/${data.list[1].weather[0].icon}.png' alt="weather_icon">`;

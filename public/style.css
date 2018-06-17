@@ -23,6 +23,10 @@ h1 {
     font-family: 'Righteous', cursive;
 }
 
+p {
+    margin: 3% 0%;
+}
+
 #background-img {
        width: 100%;
        height: 100%;
@@ -43,7 +47,7 @@ h1 {
 
 .fore-show {
     width: 93px;
-
+    text-align: center;
 }
 
 #forecast {
