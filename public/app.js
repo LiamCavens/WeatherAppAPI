@@ -1,6 +1,6 @@
 const app = function () {
     getDataByCity('Glasgow');
-    showMapData();
+    // showMapData();
     //getCurrentLocation();
 
 
@@ -53,6 +53,30 @@ const populate = function (data) {
     cityHeader.textContent = `Weather in ${data.city.name}, ${data.city.country}`;
     cityTemp.innerHTML = `Temperature : ${(data.list[0].main.temp - 273).toFixed()}&#176;C`;
     weatherType.innerHTML = `Description : ${data.list[0].weather[0].description} <img id="weather-icon" src='http://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png' alt="weather_icon">`;
+
+    const forecast1 = document.querySelector('#cast-1');
+    forecast1.innerHTML = `${data.list[1].dt_txt} <img id="weather-icon" src='http://openweathermap.org/img/w/${data.list[1].weather[0].icon}.png' alt="weather_icon">`;
+
+    const forecast2 = document.querySelector('#cast-2');
+    forecast2.innerHTML = `${data.list[2].dt_txt} <img id="weather-icon" src='http://openweathermap.org/img/w/${data.list[2].weather[0].icon}.png' alt="weather_icon">`;
+
+    const forecast3 = document.querySelector('#cast-3');
+    forecast3.innerHTML = `${data.list[3].dt_txt} <img id="weather-icon" src='http://openweathermap.org/img/w/${data.list[3].weather[0].icon}.png' alt="weather_icon">`;
+
+    const forecast4 = document.querySelector('#cast-4');
+    forecast4.innerHTML = `${data.list[4].dt_txt} <img id="weather-icon" src='http://openweathermap.org/img/w/${data.list[4].weather[0].icon}.png' alt="weather_icon">`;
+
+    const forecast5 = document.querySelector('#cast-5');
+    forecast5.innerHTML = `${data.list[5].dt_txt} <img id="weather-icon" src='http://openweathermap.org/img/w/${data.list[5].weather[0].icon}.png' alt="weather_icon">`;
+
+    const forecast6 = document.querySelector('#cast-6');
+    forecast6.innerHTML = `${data.list[6].dt_txt} <img id="weather-icon" src='http://openweathermap.org/img/w/${data.list[6].weather[0].icon}.png' alt="weather_icon">`;
+
+    const forecast7 = document.querySelector('#cast-7');
+    forecast7.innerHTML = `${data.list[7].dt_txt} <img id="weather-icon" src='http://openweathermap.org/img/w/${data.list[7].weather[0].icon}.png' alt="weather_icon">`;
+
+    const forecast8 = document.querySelector('#cast-8');
+    forecast8.innerHTML = `${data.list[8].dt_txt} <img id="weather-icon" src='http://openweathermap.org/img/w/${data.list[8].weather[0].icon}.png' alt="weather_icon">`;
 };
 
 const getCurrentLocation = function () {

@@ -11,12 +11,13 @@ h1 {
 
 .main-container {
     display: grid;
-    grid-template-columns: 50% 50%;
-    /* grid-template-rows: 25% 25% 25% 25%; */
+    grid-template-columns: 33% 33% 33%;
+    /* grid-template-columns: 50% 50%; 
+    grid-template-rows: 25% 25% 25% 25%; */
 }
 
 .city-info {
-    grid-column: 1;
+    grid-column: 2;
     text-align: center;
     font-size: 34px;
     font-family: 'Righteous', cursive;
@@ -39,3 +40,51 @@ h1 {
 #weather-map {
     grid-column: 2;
 }
+
+.fore-show {
+    width: 93px;
+
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-evenly;
+    /* display: grid;
+    grid-template-columns: 12% 12% 12% 12% 12% 12% 12% 12%; */
+    font-family: 'Righteous', cursive;
+    color: whitesmoke;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+/* #cast-1 {
+    grid-column: 1;
+}
+
+#cast-2 {
+    grid-column: 2;
+}
+
+#cast-3 {
+    grid-column: 3;
+}
+
+#cast-4 {
+    grid-column: 4;
+}
+
+#cast-5 {
+    grid-column: 5;
+}
+
+#cast-6 {
+    grid-column: 6;
+}
+
+#cast-7 {
+    grid-column: 7;
+}
+
+#cast-8 {
+    grid-column: 8;
+} */
+
