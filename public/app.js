@@ -1,5 +1,6 @@
 const app = function () {
-    getDataByCity('Glasgow')
+    getDataByCity('Glasgow');
+    showMapData();
     //getCurrentLocation();
 
 
@@ -67,5 +68,13 @@ const getCurrentLocationSuccess = function (position) {
 const getCurrentLocationFailure = function () {
     getDataByCity('Glasgow');
 }
+
+const showMapData = function(){
+    const mapUrl = "https://tile.openweathermap.org/map/temp_new/5/55/4.png?appid=c4f320d668e5ec15a88bf95db5d697b1";
+
+    const mapData = document.querySelector('#weather-map');
+
+    mapData.innerHTML = `<canvas> ${mapUrl} </canvas>`; //Dont expect this to work
+};
 
 window.addEventListener('load', app);
