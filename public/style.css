@@ -53,6 +53,8 @@ h1 {
     grid-template-columns: 12% 12% 12% 12% 12% 12% 12% 12%; */
     font-family: 'Righteous', cursive;
     color: whitesmoke;
+    border: 1px solid whitesmoke;
+    background-color: rgb(245, 245, 245, 0.3);
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
